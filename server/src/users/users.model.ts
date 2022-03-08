@@ -1,8 +1,6 @@
-import { BelongsToMany, Column, DataType, Model, Table } from "sequelize-typescript";
+import { Column, DataType, Model, Table } from "sequelize-typescript";
 import { ApiProperty } from "@nestjs/swagger";
 import { swagger } from "./dto/users.swagger";
-import { Role } from "../roles/roles.model";
-import { UserRoles } from "../roles/user-roles.model";
 
 const { INTEGER, STRING, BOOLEAN } = DataType
 
@@ -38,7 +36,4 @@ export class User extends Model<User, UserCreationAttrs> {
    @Column({
       type: STRING, allowNull: true
    }) banReason: string
-
-   @BelongsToMany(() => Role, () => UserRoles)
-   roles: Role[]
 }
