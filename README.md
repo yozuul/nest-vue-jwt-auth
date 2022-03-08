@@ -1,2 +1,4 @@
 # nest-vue-jwt-auth
- Сервис регистрации / авторизации
+ JWT регистрация / авторизация.
+
+ Nest, Fastify, Sequelize, PG, Vue, Snowpack, Docker
