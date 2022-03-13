@@ -8,7 +8,7 @@ async function start() {
    const app = await NestFactory.create<NestFastifyApplication>(
       AppModule, new FastifyAdapter()
    )
-
+   app.enableCors()
    const config = new DocumentBuilder()
       .setTitle('Система регистрации и авторизации')
       .setDescription('Документация')

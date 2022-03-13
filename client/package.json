@@ -1,17 +1,18 @@
 {
+  "name": "client",
+  "version": "0.0.0",
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
-    "type-check": "tsc"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "vue": "^3.0.11"
+    "axios": "^0.26.1",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@snowpack/plugin-dotenv": "^2.1.0",
-    "@snowpack/plugin-vue": "^2.4.0",
-    "snowpack": "^3.3.7",
-    "typescript": "^4.2.4"
+    "@vitejs/plugin-vue": "^2.2.2",
+    "vite": "^2.8.4"
   }
 }

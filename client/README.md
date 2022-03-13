@@ -1,26 +1,29 @@
-# New Project
+# client
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+This template should help get you started developing with Vue 3 in Vite.
 
-## Available Scripts
+## Recommended IDE Setup
 
-### npm start
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## Customize configuration
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-### npm test
+## Project Setup
 
-**⚠️ NOTE:** Vue 3 testing support is still in progress. This template does not ship with a test runner.
+```sh
+npm install
+```
 
-### npm run build
+### Compile and Hot-Reload for Development
 
-Builds the app for production to the `build/` folder.
-It correctly bundles Vue in production mode and optimizes the build for the best performance.
+```sh
+npm run dev
+```
 
-### Q: What about Eject?
+### Compile and Minify for Production
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+```sh
+npm run build
+```
