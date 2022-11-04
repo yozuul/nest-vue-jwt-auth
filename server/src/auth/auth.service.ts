@@ -38,8 +38,10 @@ export class AuthService {
 
    private async validateUser(userDto: CreateUserDto) {
       const user = await this.usersService.getUserByEmail(userDto.email)
-      const passwordEquals = await bcrypt.compare(userDto.password, user.password)
-      if(user && passwordEquals) return user
+      if(user) {
+         const passwordEquals = await bcrypt.compare(userDto.password, user.password)
+         if(passwordEquals) return user
+      }
       throw new UnauthorizedException({ message: 'Неверно указан email или пароль' })
    }
 }
